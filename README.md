@@ -1,13 +1,13 @@
 # Hybrid-Clustering---GA
 
-This group of files implement a classifier for a One Class Classification.
+This repository implements a classifier for a One Class Classification.
 The classifier uses a clustering algorithm and a genetic algorithm.
 
 It is structed like this:
 
 Dataset is dived in three disjoint groups: Training Set, Validation Set and Test Set.
 The Training Set contains only positive class patterns, while Validation Set and Test Set contains positive and negative class patterns.
-A k - means algorithm is applied on Training Set, and for each cluster is computer a radius by the matemathical average of patterns'
+A k - means algorithm is applied on Training Set, and for each cluster a radius is computed by the matemathical average of patterns'
 distances from centroid.
 The k - means algorithm is implemented with a custom weighted distance. Weights are chosen by a genetic algoritmh which targets is maximize
 accuracy on validation set.
