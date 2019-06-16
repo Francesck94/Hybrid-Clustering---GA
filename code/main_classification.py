@@ -290,7 +290,7 @@ else:
 
 # %% best k-means
 
-kt = km.k_means(kpar.k,kpar.iter,kpar.soglia,'predef',kpar.init,M)
+kt = km.k_means(kpar.k,kpar.iter,kpar.soglia,kpar.init,kpar.start,M)
 kt.train(train_set)
 
 if dim ==2:
