@@ -18,5 +18,5 @@ Then test set'patterns are classified.
 
 In addition a soft classification is realized, that is for each test set pattern a score, which quantifies his distance from the centroid, is computed. This score comes from a gaussian membership functions and its range is [0,1].
 
-## New ##
-In order to obtain posterior probability for test pattern membership, a post - processing calibration phase has been added to the project. The calibration folder contains some methods that transform score values into real probabilities (Platt scaling, Isotonic Regression, SpineCalib.
+## Calibration ##
+In order to obtain posterior probability for test pattern membership, a post - processing calibration phase has been added to the project. The calibration folder contains some methods able to transform score values into probabilities values (Platt scaling, Isotonic Regression, SpineCalib). A calibration function is learned on a calibration set composed by target label y and score values s, and then it is applied to test set score in order to obtain probabilities.
