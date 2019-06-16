@@ -126,17 +126,17 @@ mse_spline_val = brier_score_loss(val_set['classe'],prob_spline_val)
 mse_spline_test = brier_score_loss(test_set['classe'],prob_spline_test)
 
 # %%
-print('MSE val: %1.4f' % (mse_val))
-print('MSE test: %1.4f' % (mse_test))
+print('\nMSE val: %1.4f' % (mse_val))
+print('MSE test: %1.4f\n' % (mse_test))
 
 print('MSE platt val: %1.4f' % (mse_platt_val))
-print('MSE platt test: %1.4f' % (mse_platt_test))
+print('MSE platt test: %1.4f\n' % (mse_platt_test))
 
 print('MSE iso val: %1.4f' % (mse_iso_val))
-print('MSE iso test: %1.4f' % (mse_iso_test))
+print('MSE iso test: %1.4f\n' % (mse_iso_test))
 
 print('MSE spline val: %1.4f' % (mse_spline_val))
-print('MSE spline test: %1.4f' % (mse_spline_test))
+print('MSE spline test: %1.4f\n' % (mse_spline_test))
 
 # %% Log - loss score
 loss_val = log_loss(val_set['classe'],val_set['score'])
@@ -152,17 +152,17 @@ loss_spline_val = log_loss(val_set['classe'],prob_spline_val)
 loss_spline_test = log_loss(test_set['classe'],prob_spline_test)
 
 # %%
-print('loss val %1.4f' % (loss_val))
-print('loss test: %1.4f' % (loss_test))
+print('\nloss val %1.4f' % (loss_val))
+print('loss test: %1.4f\n' % (loss_test))
 
 print('loss platt val: %1.4f' % (loss_platt_val))
-print('loss platt test: %1.4f' % (loss_platt_test))
+print('loss platt test: %1.4f\n' % (loss_platt_test))
 
 print('loss iso val: %1.4f' % (loss_iso_val))
-print('loss iso test: %1.4f' % (loss_iso_test))
+print('loss iso test: %1.4f\n' % (loss_iso_test))
 
 print('loss spline val: %1.4f' % (loss_spline_val))
-print('loss spline test: %1.4f' % (loss_spline_test))
+print('loss spline test: %1.4f\n' % (loss_spline_test))
 
 # %% bar plot mse
 mse_vec = [mse_test,mse_platt_test,mse_iso_test,mse_spline_test]
